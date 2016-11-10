@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/logo_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    
+        
+        <TextView
+            android:id="@+id/text_withdraw_currentAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="10dip"            
+            android:gravity="bottom"
+            android:text="当前余额:"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edit_text_withdraw_currentAmount"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:editable="false"
+            android:layout_below="@id/text_withdraw_currentAmount"
+            android:layout_marginLeft="12dip"
+            android:layout_marginRight="10dip" />
+        
+        <TextView
+            android:id="@+id/text_withdraw_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="10dip"            
+            android:gravity="bottom"
+            android:layout_below="@id/edit_text_withdraw_currentAmount"
+            android:text="充值手机号:"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edit_text_withdraw_tel"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:editable="false"
+            android:layout_below="@id/text_withdraw_tel"
+            android:layout_marginLeft="12dip"
+            android:layout_marginRight="10dip" />
+
+        
+         
+        <TextView
+            android:id="@+id/text_withdraw_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="10dip"
+             android:layout_below="@id/edit_text_withdraw_tel"
+            android:gravity="bottom"
+            android:text="充值金额(元)"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        
+	       <Spinner 
+	        android:id="@+id/spinner_withdraw_amount"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/text_withdraw_amount"
+	   	   />
+       
+       
+        <Button
+            android:id="@+id/btn_withdraw_confirm"
+            android:layout_width="100dip"
+            android:layout_height="40dip"
+            android:layout_below="@id/spinner_withdraw_amount"
+            android:layout_alignParentRight="true"            
+            android:layout_marginRight="10dip"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="#000000"
+            android:textSize="18sp"/>
+        
+    </RelativeLayout>
+    
+    
+
+</LinearLayout>
